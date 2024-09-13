@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alien Invasion Game</title>
+    
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+</head>
+<body>
+    <h1>Alien Invasion Game</h1>
+
+    <!-- Load all the Python files in the PyScript environment -->
+    <py-env>
+        - alien_invasion.py
+        - alien.py
+        - bullet.py
+        - button.py
+        - game_functions.py
+        - game_stats.py
+        - scoreboard.py
+        - settings.py
+        - ship.py
+    </py-env>
+
+    <!-- This will run the game -->
+    <py-script src="alien_invasion.py"></py-script>
+
+    <!-- Optional: You can use a canvas element for rendering if needed -->
+    <canvas id="gameCanvas" width="800" height="600"></canvas>
+</body>
+</html>

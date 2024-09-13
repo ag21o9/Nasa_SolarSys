@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Games Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+  <!-- Header Section -->
+  <header class="bg-gray-800 py-4 shadow-lg">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl font-bold">🚀 Space Games Dashboard</h1>
+      <p class="text-xl mt-2">Choose your cosmic adventure</p>
+    </div>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="container mx-auto mt-10">
+    <div class="flex justify-center space-x-10" id="game-list">
+
+      <!-- Game 1: Earth Quiz -->
+      <div class="game-card group transform hover:scale-105 transition duration-300">
+        <div class="game-img bg-blue-500 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images-assets.nasa.gov/image/PIA00122/PIA00122~small.jpg" alt="Earth Quiz" class="w-full h-64 object-cover">
+        </div>
+        <div class="game-info p-4 text-center">
+          <h2 class="text-2xl font-semibold">Earth Quiz</h2>
+          <p class="mt-2">Test your knowledge about our home planet Earth!</p>
+          <button onclick="window.location.href='../Nasa_Game/earth.html'" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 transition duration-300">Play Now</button>
+        </div>
+      </div>
+
+      <!-- Game 2: Mars Quiz -->
+      <div class="game-card group transform hover:scale-105 transition duration-300">
+        <div class="game-img bg-red-500 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images-assets.nasa.gov/image/PIA04591/PIA04591~orig.jpg" alt="Mars Quiz" class="w-full h-64 object-cover">
+        </div>
+        <div class="game-info p-4 text-center">
+          <h2 class="text-2xl font-semibold">Mars Quiz</h2>
+          <p class="mt-2">How well do you know the Red Planet?</p>
+          <button onclick="window.location.href='../Nasa_Game/mars.html'" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mt-4 transition duration-300">Play Now</button>
+        </div>
+      </div>
+
+      <!-- Game 3: Jupiter Quiz -->
+      <div class="game-card group transform hover:scale-105 transition duration-300">
+        <div class="game-img bg-yellow-500 rounded-lg overflow-hidden shadow-lg">
+          <img src="https://images-assets.nasa.gov/image/PIA01370/PIA01370~small.jpg" alt="Jupiter Quiz" class="w-full h-64 object-cover">
+        </div>
+        <div class="game-info p-4 text-center">
+          <h2 class="text-2xl font-semibold">Jupiter Quiz</h2>
+          <p class="mt-2">Explore the largest planet in our solar system!</p>
+          <button onclick="window.location.href='../Nasa_Game/jupiter.html'" class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded mt-4 transition duration-300">Play Now</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
